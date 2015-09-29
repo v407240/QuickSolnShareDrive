@@ -1,0 +1,65 @@
+job_details
+
+job_id INT
+Tech_id INT
+sequence INT
+duedate DATE
+categoryId INT
+status varchar(25)
+
+tech_details
+
+Tech_id INT
+techName varchar(25)
+phone INT
+
+
+
+job_cust_map
+
+job_id INT
+cust_id INT
+
+cust_details
+
+cust_id INT
+custName varchar(100)
+addrNo INT
+streetName varchar(150)
+city varchar(100)
+state varchar(50)
+ZIP varchar(10) 
+custEmail varchar(100)
+phoneNo  INT
+
+
+transact_details
+
+trans_id  INT
+job_id INT
+status varchar(25)
+time datetime
+
+tech_users
+user_id INT
+userlogid varchar(7)
+firstName varchar(100)
+lastName varchar(100)
+roleId INT
+
+tech_roles
+role_id INT
+roleName varchar(25)
+roleDesc varchar(25)
+
+tech_privs
+priv_id INT
+screenLink varchar(150)
+
+user_role_map
+user_id INT
+role_id INT
+ 
+role_priv_map
+role_id INT
+priv_id INT
