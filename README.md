@@ -19,3 +19,5 @@ https://javamail.java.net/nonav/docs/api/com/sun/mail/smtp/SMTPTransport.html - 
 https://developers.google.com/eclipse/docs/getting_started - google plugin
 
 http://www.drivingrouteplanner.com/
+
+https://developers.google.com/maps-engine/documentation/hello-world - Google map
