@@ -22,4 +22,8 @@ http://www.drivingrouteplanner.com/
 
 https://developers.google.com/maps-engine/documentation/hello-world - Google map
 
-http://www.java2s.com/Code/Jar/g/Downloadgwtmaps3jar.htm
+http://www.1stwebdesigner.com/distance-finder-google-maps-api/
+
+http://4byte.cn/question/762535/google-map-with-dynamic-and-multiple-destinations.html
+
+
