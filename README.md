@@ -32,3 +32,4 @@ http://www.java2s.com/Code/Jar/g/Downloadgwtmaps3jar.htm
 http://www.sitepoint.com/find-a-route-using-the-geolocation-and-the-google-maps-api/
 https://developers.google.com/maps/documentation/directions/intro?csw=1
 http://dev.mysql.com/doc/refman/5.6/en/mysql.html
+https://dev.mysql.com/doc/refman/5.0/en/entering-queries.html
