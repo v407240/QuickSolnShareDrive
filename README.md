@@ -15,4 +15,4 @@ http://mobile.dzone.com/sites/all/files/Source-Code-Java-SMS-Example-HTTP_0.zip 
 
 http://jsfiddle.net/er4s3/1/
 
-https://javamail.java.net/nonav/docs/api/com/sun/mail/smtp/SMTPTransport.html
+https://javamail.java.net/nonav/docs/api/com/sun/mail/smtp/SMTPTransport.html - Send sms through smtp
