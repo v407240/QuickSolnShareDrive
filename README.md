@@ -27,6 +27,14 @@ http://www.1stwebdesigner.com/distance-finder-google-maps-api/
 http://4byte.cn/question/762535/google-map-with-dynamic-and-multiple-destinations.html
 
 
+CREATE  TABLE `techtool`.`login` (  
+06.  `user` VARCHAR(20) NOT NULL ,  
+07.  `password` VARCHAR(20) NOT NULL ,  
+08.  PRIMARY KEY (`user`) );   
+09.INSERT INTO `techtool`.`login` (`user`, `password`) VALUES ('Admin', 'password'); 
+
+
+
 http://www.java2s.com/Code/Jar/g/Downloadgwtmaps3jar.htm
 
 http://www.sitepoint.com/find-a-route-using-the-geolocation-and-the-google-maps-api/
