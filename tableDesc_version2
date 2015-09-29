@@ -1,0 +1,136 @@
+job_details
+----------
+job_id INT
+user_id INT //change the tech_id to user_id
+sequence INT
+duedate DATE
+categoryId INT
+status varchar(25)
+
+201, 1021 , 1, '2015-09-29', 500,'Assigned'
+202 ,1021 , 2, '2015-09-29',501,'Assigned'
+203,1021, 3, '2015-09-29',502'Assigned'
+204,1022,4,'2015-09-29',503,'Assigned'
+205,1022,5,'2015-09-29',503,'Assigned'
+
+insert into job_details (job_id ,user_id,sequence,duedate,categoryId,status) values(201,1021,1,'2015-09-29',500,'Assigned');
+insert into job_details (job_id ,user_id,sequence,duedate,categoryId,status) values(202,1021,2,'2015-09-29',501,'Assigned');
+insert into job_details (job_id ,user_id,sequence,duedate,categoryId,status) values(203,1021,3,'2015-09-29',502,'Assigned');
+insert into job_details (job_id ,user_id,sequence,duedate,categoryId,status) values(204,1022,4,'2015-09-29',503,'Assigned');
+insert into job_details (job_id ,user_id,sequence,duedate,categoryId,status) values(201,1022,5,'2015-09-29',503,'Assigned');
+ 
+category_details
+----------
+categoryId INT
+categType varchar(25) 
+duration INT
+
+500,"INSTALL",120
+501,"REPAIR",60
+502,"REPAIR",60
+503,"DISCONNECT",30
+
+
+insert into category_details (categoryId,categType,duration) values(500,'INSTALL',120);
+insert into category_details(categoryId,categType,duration) values(501,'REPAIR',60);
+insert into category_details(categoryId,categType,duration) values(502,'DISCONNECT',30);
+
+-----------------
+
+
+ 
+
+
+
+job_cust_map
+----------
+job_id INT
+cust_id INT
+
+
+201,909
+202,910
+203,911
+204,912
+
+
+cust_details
+----------
+cust_id INT
+custName varchar(100)
+addrNo INT
+streetName varchar(150)
+city varchar(100)
+state varchar(50)
+ZIP varchar(10) 
+custEmail varchar(100)
+phoneNo  INT
+area varchar(150)
+
+/add area 
+https://www.google.com/maps/dir/Madipakkam,+Chennai,+Tamil+Nadu,+India/Velachery,+Chennai,+Tamil+Nadu,+India/
+
+insert into cust_details (cust_id, custName, addrNo, streetName,city,state, zip ,custEmail,phoneNo, area) values(909,'Johnson',101,'MKN Road','chennai','tamilnadu','','girish.damodar@gmail.com',9898989,'alandur');
+
+insert into cust_details (cust_id, custName, addrNo, streetName,city,state, zip ,custEmail,phoneNo, area) values(910,'Jacob',54,'7th cross street','chennai','tamilnadu','','girish.damodar@gmail.com',9898989,'palikarnai');
+
+insert into cust_details (cust_id, custName, addrNo, streetName,city,state, zip ,custEmail,phoneNo, area) values(911,'Issac',60,'8th cross street','chennai','tamilnadu','','girish.damodar@gmail.com',7777777,'annanagar');
+
+transact_details
+----------
+trans_id  INT
+job_id INT
+status varchar(25)
+time datetime
+
+insert into transact_details (trans_id,job_id, status, time) values (661,201,'Checkout','2015-09-29 09:00:00');
+
+insert into transact_details (trans_id,job_id, status, time) values (662,202,'Checkout','2015-09-29 09:00:00');
+
+
+tech_users
+----------
+user_id INT
+userlogid varchar(7)
+firstName varchar(100)
+lastName varchar(100)
+roleId INT
+password varchar(7)
+//remove the role id from the tech users
+
+insert into tech_users (user_id,userlogid,firstName,lastName,roleId) values(1021,'C98008','Jamal','Abdeen',2000);
+
+insert into tech_users (user_id,userlogid,firstName,lastName,roleId) values(1022,'C98009','Michaell','Jackson',2000);
+
+insert into tech_users (user_id,userlogid,firstName,lastName,roleId) values(1023,'C98010','Jack','Mark',2000);
+
+tech_roles
+----------
+role_id INT
+roleName varchar(25)
+roleDesc varchar(25)
+
+insert into tech_roles (role_id, roleName, roleDesc) values (2000,'Admin','Admin charge')
+
+tech_privs
+----------
+priv_id INT
+screenLink varchar(150)
+
+insert into tech_privs(priv_id,screenLink) values(789,'/ivapp/disp/dispatch.jsp')
+
+user_role_map
+----------
+user_id INT
+role_id INT
+
+insert into user_role_map values(1021,2000);
+insert into user_role_map values(1022,2000);
+
+ 
+role_priv_map
+----------
+role_id INT
+priv_id INT
+
+insert into role_priv_map (role_id,priv_id) values (2000,789);
