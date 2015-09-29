@@ -7,4 +7,4 @@ http://books.zkoss.org/wiki/Setup_MySQL_DB_in_Eclipse
 
 http://www.ozekisms.com/index.php?owpn=583 - send sms
 
-https://developers.google.com/api-client-library/java/apis/mapsengine/v1
+https://developers.google.com/api-client-library/java/apis/mapsengine/v1 - to download the google api client library.
