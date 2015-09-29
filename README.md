@@ -30,3 +30,4 @@ http://4byte.cn/question/762535/google-map-with-dynamic-and-multiple-destination
 http://www.java2s.com/Code/Jar/g/Downloadgwtmaps3jar.htm
 
 http://www.sitepoint.com/find-a-route-using-the-geolocation-and-the-google-maps-api/
+https://developers.google.com/maps/documentation/directions/intro?csw=1
