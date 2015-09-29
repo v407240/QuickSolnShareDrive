@@ -21,3 +21,5 @@ https://developers.google.com/eclipse/docs/getting_started - google plugin
 http://www.drivingrouteplanner.com/
 
 https://developers.google.com/maps-engine/documentation/hello-world - Google map
+
+http://www.java2s.com/Code/Jar/g/Downloadgwtmaps3jar.htm
