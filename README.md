@@ -35,3 +35,46 @@ http://dev.mysql.com/doc/refman/5.6/en/mysql.html
 https://dev.mysql.com/doc/refman/5.0/en/entering-queries.html
 
 mysql-connector-java-5.1.23-bin.jar - connector
+
+
+ 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+//import com.mysql.jdbc.Driver;
+
+public class TestDistance {
+	public static void main(String[] args) {
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		try {
+//			new com.mysql.jdbc.Driver();
+			Class.forName("com.mysql.jdbc.Driver").newInstance();
+// conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/techtool?user=root&password=''");
+			String connectionUrl = "jdbc:mysql://'scsbwin-465906'/techtool";
+			String connectionUser = "root";
+			String connectionPassword = "";
+			conn = DriverManager.getConnection(connectionUrl, connectionUser, connectionPassword);
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery("SELECT * FROM employees");
+			while (rs.next()) {
+				String id = rs.getString("id");
+				String firstName = rs.getString("first_name");
+				String lastName = rs.getString("last_name");
+				System.out.println("ID: " + id + ", First Name: " + firstName
+						+ ", Last Name: " + lastName);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try { if (rs != null) rs.close(); } catch (SQLException e) { e.printStackTrace(); }
+			try { if (stmt != null) stmt.close(); } catch (SQLException e) { e.printStackTrace(); }
+			try { if (conn != null) conn.close(); } catch (SQLException e) { e.printStackTrace(); }
+		}
+	}
+}
+ 
