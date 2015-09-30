@@ -86,3 +86,4 @@ public class TestDistance {
 	}
 }
  
+http://zetcode.com/tutorials/jeetutorials/mysqldatabase/
